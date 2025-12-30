@@ -1,0 +1,41 @@
+# =================
+# Secrets / AI tools
+# =================
+.env
+.env.*
+*.env
+.claude
+
+# =================
+# Virtual environments
+# =================
+venv/
+.venv/
+env/
+ENV/
+
+# =================
+# Python cache
+# =================
+__pycache__/
+*.py[cod]
+
+# =================
+# Data files
+# =================
+*.csv
+*.jsonl
+*.parquet
+*.xlsx
+
+# =================
+# Logs
+# =================
+*.log
+
+# =================
+# OS / Editor
+# =================
+.DS_Store
+.idea/
+.vscode/
