@@ -3,17 +3,17 @@ import csv
 import glob
 
 # 입력/출력 설정
-input_dir = "art_contest_pages"
-output_file = "art_contest_all.csv"
+input_dir = "swissfriends_pages"
+output_file = "swissfriends_pages_all.csv"
 test_mode = False  # 테스트 모드 (True: 2개만, False: 전체)
 
 # CSV 파일 목록 가져오기 (정렬)
-csv_files = sorted(glob.glob(os.path.join(input_dir, "art_contest_page_*.csv")))
+csv_files = sorted(glob.glob(os.path.join(input_dir, "swissfriends_page_*.csv")))
 
 # 테스트 모드: 처음 2개만
 if test_mode:
     csv_files = csv_files[:2]
-    output_file = "art_contest_test.csv"
+    output_file = "swissfriends_test.csv"
 
 if not csv_files:
     print(f"❌ {input_dir} 폴더에 CSV 파일이 없습니다.")
